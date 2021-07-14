@@ -19,6 +19,7 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 30px;
+    border-bottom: 1px solid var(--colorFive, white);
 }
 
 .nav__logo{
@@ -49,7 +50,7 @@ header{
     width: 0%;
     left: 50%;
     bottom: 0;
-    background-color: var(--colorOne);
+    background-color: var(--colorOne, #1732BF);
     transition: .3s ease-in-out;
 }
 .nav__list li a:hover{
@@ -58,21 +59,21 @@ header{
 .nav__list li a:hover::after{
     width: 100%;
     left: 0;
-    color: var(--colorOne);
+    color: var(--colorOne, #1732BF);
 }
 
 .nav__contact{
     text-decoration: none;
-    background: var(--colorFive);
+    background: var(--colorFive, white);
     padding: 10px;
     border-radius: 5px;
     text-transform: uppercase;
-    color:  var(--colorThree);
+    color:  var(--colorThree, #2979DA);
     transition: 0.2s ease-in-out;
 }
 .nav__contact:hover{
-    background: var(--colorThree);
-    color: var(--colorFive);
+    background: var(--colorThree, #2979DA);
+    color: var(--colorFive, white);
 }
 
 .header__container{
