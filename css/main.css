@@ -89,6 +89,8 @@ header{
     font-family: 'Niconne', cursive;
     font-weight: 700;
     text-shadow: 5px 5px #1732BF, 10px 10px #2979DA, 15px 15px #2B8BD8, 20px 20px #37CAD1,25px 25px #000;
+    animation: animation__title 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+    infinite alternate;
 }
 
 
@@ -103,3 +105,12 @@ header{
         background-position: 0 50%;
     }
 }
+@keyframes animation__title {
+    0% {
+      transform: scale(0.9);
+    }
+    80%,
+    100% {
+      transform: scale(1.2) rotateZ(-3deg);
+    }
+  }
