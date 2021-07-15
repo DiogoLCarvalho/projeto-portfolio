@@ -16,6 +16,7 @@
     height: 100%;
     border-radius: 100px 20px 100px 20px;
     margin: 20px;
+    box-shadow: 1px 3px 15px -3px var(--colorThree, #2979DA);
 }
 .about__text  {
     display: flex;
@@ -29,6 +30,6 @@
     text-align: center;
     font-size: 2em;
     text-decoration: underline;
-    color: var(--colorThree);
+    color: var(--colorThree, #2979DA);
     text-transform: uppercase;
 }
