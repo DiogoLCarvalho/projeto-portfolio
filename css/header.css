@@ -12,7 +12,6 @@ header{
     animation: gradient 10s ease infinite;
     background-size: 300% 300%; 
     height: 100vh;
-    width: 100vw;
 }
 .header__nav{
     display: flex;
@@ -21,13 +20,6 @@ header{
     flex-wrap:wrap;
     padding: 30px;
     border-bottom: 1px solid var(--colorFive, white);
-}
-
-.nav__logo{
-    letter-spacing: 10px;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    color: var(--colorFive, white);
 }
 
 .nav__list{
@@ -93,8 +85,7 @@ header{
     font-family: 'Niconne', cursive;
     font-weight: 700;
     text-shadow: 5px 5px #1732BF, 10px 10px #2979DA, 15px 15px #2B8BD8, 20px 20px #37CAD1,25px 25px #000; /*Shadow*/
-    animation: animation__title 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
-    infinite alternate; /*Animação Personalizada*/
+    animation: animation__title 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate; /*Animação Personalizada*/
 }
 .header__container > i {
     width: 100%;

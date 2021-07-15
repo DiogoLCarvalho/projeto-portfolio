@@ -1,0 +1,34 @@
+#about {
+    height: 90vh;
+    background-color: var(--colorFive, white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about__img {
+    background-image: url(../img/foto.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border-radius: 100px 20px 100px 20px;
+    margin: 20px;
+}
+.about__text  {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 300px;
+    justify-content: space-between;
+    font-size: 1.4em;
+}
+.section__title{
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    color: var(--colorThree);
+    text-transform: uppercase;
+}
