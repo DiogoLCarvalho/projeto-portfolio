@@ -12,8 +12,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
-    height: 100%;
+    width: 30%;
+    height: 60%;
     border-radius: 100px 20px 100px 20px;
     margin: 20px;
     box-shadow: 1px 3px 15px -3px var(--colorThree, #2979DA);
@@ -23,7 +23,7 @@
     flex-direction: column;
     width: 40%;
     height: 300px;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 1.4em;
 }
 .section__title{
