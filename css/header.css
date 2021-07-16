@@ -7,7 +7,7 @@ body{
 
 /* HEADER */
 header{
-    background: linear-gradient(-45deg,#37CAD1,#2B8BD8,#2979DA,#1732BF) no-repeat;
+    background: linear-gradient(-45deg,#2979DA,#37CAD1,#2979DA,#1732BF) no-repeat;
     background-color: var(--colorTwo, #2B8BD8);
     animation: gradient 10s ease infinite;
     background-size: 300% 300%; 

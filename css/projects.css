@@ -1,0 +1,21 @@
+#projects{
+    background-color: var(--colorTwo);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.projects__card{
+    background-color: var(--colorFive, white);
+    width: 500px;
+    height: 500px;
+}
+.card__container{
+    flex: 1 1 150px; /*  Stretching: */
+    flex: 0 1 150px; /*  No stretching: */
+    margin: 5px;
+}
+.card__img img{
+    width: 100%;
+}
