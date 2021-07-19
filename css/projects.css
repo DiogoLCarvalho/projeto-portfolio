@@ -1,6 +1,7 @@
 #projects {
     background-color: var(--colorTwo, #2B8BD8);
     display: grid;
+    grid-template-columns: 300px 3fr;
     grid-template-areas: "skills projects";
 }
 
