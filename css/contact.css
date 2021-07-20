@@ -19,13 +19,16 @@
     height: 100%;
 }
 
-.contact__list li span {
-    vertical-align: 20px;
-    margin-left: 20px;
-}
-
 .contact__list li {
     width: 180px;
+    position: relative;
+}
+
+.contact__list li span {
+    margin-left: 20px;
+    position: absolute;
+    bottom: 35%;
+    left: 40%;
 }
 
 .contact__list li:first-child a,.contact__list li:first-child span {
@@ -45,8 +48,7 @@
 }
 .contact__span--JS{
     padding: 15px;
-    /* background-color: #4C4C4C; */
     color: white !important; 
     border-radius: 5px;
-    vertical-align: 26px;
+    bottom: 20% !important;
 }
