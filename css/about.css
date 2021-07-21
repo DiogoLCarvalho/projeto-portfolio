@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .about__img {
@@ -18,18 +19,31 @@
     margin: 20px;
     box-shadow: 1px 3px 15px -3px var(--colorThree, #2979DA);
 }
-.about__text  {
+
+.about__text {
     display: flex;
     flex-direction: column;
     width: 40%;
     height: 300px;
     justify-content: space-around;
     font-size: 1.4em;
+    text-align: justify;
 }
-.section__title{
+
+.section__title {
     text-align: center;
     font-size: 2em;
     text-decoration: underline;
     color: var(--colorThree, #2979DA);
     text-transform: uppercase;
+}
+
+@media (max-width: 780px) {
+    .about__img {
+        display: none;
+    }
+    .about__text {
+        width: 70%;
+        height: 500px;
+    }
 }

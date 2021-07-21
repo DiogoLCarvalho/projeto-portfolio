@@ -1,5 +1,5 @@
 #contact {
-    height: 50vh;
+    height: 100%;
     margin: 20px;
 }
 
@@ -22,6 +22,7 @@
 .contact__list li {
     width: 180px;
     position: relative;
+    margin: 15px;
 }
 
 .contact__list li span {

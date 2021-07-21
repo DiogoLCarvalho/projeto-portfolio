@@ -1,7 +1,7 @@
 #projects {
     background-color: var(--colorTwo, #2B8BD8);
     display: grid;
-    grid-template-columns: 300px 3fr;
+    /* grid-template-columns: 300px 3fr; */
     grid-template-areas: "skills projects";
 }
 
@@ -134,9 +134,15 @@
     width: 100%;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1300px) {
+    #projetcts__container {
+        grid-template-areas: "title" "project01" "project02" "project03 " "project04";
+    }
+}
+
+@media (max-width: 780px) {
     #projects {
-        grid-template-areas: "skils" "projects";
+        grid-template-areas: "skills" "projects";
     }
     #projects__skills {
         position: relative;
@@ -167,8 +173,14 @@
     #projects__skills li a {
         margin: 30px 30px 30px 0;
     }
-
-
+    .projects__card {
+        width: 300px;
+        height: 445px;
+    }
+    #projects__skills ul li {
+        min-width: 45px;
+        max-width: 60px;
+    }
 }
 
 @keyframes seta {
@@ -178,4 +190,4 @@
     to {
         left: 60%;
     }
-  }
+}

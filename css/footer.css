@@ -39,6 +39,7 @@
     width: 330px;
     text-align: justify;
 }
+
 .footer__link a {
     display: block;
     margin: 0 auto;
@@ -46,10 +47,32 @@
     font-weight: 800;
     text-align: center;
 }
-.footer__link a >span{
+
+.footer__link a>span {
     font-size: 1.6em;
     text-decoration: none;
 }
-hr{
+
+hr {
     width: 85%;
+}
+
+@media (max-width: 900px) {
+    #footer {
+        height: 100%;
+    }
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .footer__text, .footer__localization, .footer__link {
+        margin: 20px 0px 20px 0px;
+    }
+    .footer__link p {
+        width: 280px;
+    }
+    hr{
+        display: none;
+    }
 }
