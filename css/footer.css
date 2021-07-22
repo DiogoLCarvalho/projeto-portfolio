@@ -76,3 +76,8 @@ hr {
         display: none;
     }
 }
+@media (max-width: 300px) {
+    .footer__link p {
+        width: 200px;
+    }
+}
