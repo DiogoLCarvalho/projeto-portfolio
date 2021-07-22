@@ -19,17 +19,17 @@ header {
 }
 
 .nav__Mobile {
-    background: url('../img/menu.png')no-repeat center center/cover;
-    width: 40px;
-    height: 30px;
+    background: url('../img/openMenu.png')no-repeat center center/cover;
+    width: 2.50em;
+    height: 1.88em;
     position: relative;
-    left: 20vw;
+    left: 0vw;
     display: none;
     transition: .8s;
 }
 .imgfechar{
     transition: .8s;
-    background: url('../img/fechar.png')no-repeat center center/cover;
+    background: url('../img/close.png')no-repeat center center/cover;
     background-size: 30px;
 }
 
@@ -71,7 +71,7 @@ header {
     /*barra na lista*/
     content: '';
     position: absolute;
-    height: 3px;
+    height: 0.19em;
     width: 0%;
     left: 50%;
     bottom: 0;
@@ -147,7 +147,7 @@ header {
 }
 
 @keyframes animation__title {
-    /*Mudando escala e ratação*/
+    /*Mudando escala e rotação*/
     0% {
         transform: scale(0.9);
     }
@@ -157,22 +157,21 @@ header {
 }
 
 @keyframes below {
-    0.0% {
-        transform: translate(0px, 80px);
+    0% {
+        transform: translate(0px, 60px);
     }
-    100% {}
-    49.7% {
-        transform: translate(0px, 50px);
+    
+    50% {
+        transform: translate(0px, 30px);
     }
 }
 
 @media (max-width: 700px) {
     .container__title {
         font-size: 5em;
+        text-shadow:2px 2px #1732bf, 4px 4px #2979da, 8px 8px #2b8bd8, 10px 10px #37cad1, 12px 12px #000 ;
     }
-    .nav__list, .nav__contact {
-        display: none;
-    }
+        
     .nav__Mobile {
         display: block;
     }
@@ -193,7 +192,7 @@ header {
     }
     .nav__list li{
         margin-left: 0px !important;
-        width: 135px;
+        width: 8.44em;
     }
  
 }

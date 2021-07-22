@@ -36,7 +36,7 @@
 }
 
 .footer__link p {
-    width: 330px;
+    width: 20.63em;
     text-align: justify;
 }
 
@@ -70,7 +70,7 @@ hr {
         margin: 20px 0px 20px 0px;
     }
     .footer__link p {
-        width: 280px;
+        width: 17.50em;
     }
     hr{
         display: none;
@@ -78,6 +78,6 @@ hr {
 }
 @media (max-width: 300px) {
     .footer__link p {
-        width: 200px;
+        width: 12.50em;
     }
 }

@@ -1,7 +1,6 @@
 #projects {
     background-color: var(--colorTwo, #2B8BD8);
     display: grid;
-    /* grid-template-columns: 300px 3fr; */
     grid-template-areas: "skills projects";
 }
 
@@ -13,8 +12,8 @@
 #projects__skills ul li {
     background-color: var(--colorFive, white);
     display: block;
-    min-width: 60px;
-    max-width: 100px;
+    min-width: 3.75em;
+    max-width: 6.25em;
     margin: 0 auto 50px auto;
     padding: 20px;
     box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
@@ -70,8 +69,8 @@
 
 .projects__card {
     background-color: var(--colorFive, white);
-    width: 500px;
-    height: 530px;
+    width: 31.25em;
+    height: 33.13em;
     border-radius: 5px;
 }
 
@@ -96,6 +95,7 @@
 .card__text p {
     text-align: justify;
     margin: 10px;
+    font-size: 1em;
 }
 
 .card__btn {
@@ -165,7 +165,7 @@
         display: flex;
     }
     #projects__skills li {
-        flex: 1 0 60px;
+        flex: 1 0 3.75em;
     }
     #projects__skills {
         padding: 0 30px;
@@ -174,12 +174,19 @@
         margin: 30px 30px 30px 0;
     }
     .projects__card {
-        width: 300px;
-        height: 445px;
+        width: 18.75em;
+        height: 27.81em;
     }
     #projects__skills ul li {
-        min-width: 45px;
-        max-width: 60px;
+        min-width: 2.81em;
+        max-width: 3.75em;
+    }
+}
+
+@media (max-width: 300px) {
+    .projects__card {
+        width: 15em;
+        height: 29.69em;
     }
 }
 
