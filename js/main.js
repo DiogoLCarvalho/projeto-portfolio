@@ -7,6 +7,7 @@ window.addEventListener('scroll', function () {
         header.style.backgroundColor = 'transparent';
     }
 });
+
 var navMobile = document.querySelector('.nav__Mobile');
 var listMobile = document.querySelector('.nav__list');
 
