@@ -1,58 +1,69 @@
 // Header
-window.addEventListener('scroll',function(){
+window.addEventListener('scroll', function () {
     var header = document.querySelector('.header__nav');
-    if(window.scrollY>500){
+    if (window.scrollY > 500) {
         header.style.backgroundColor = '#2979DA';
-    }else{
+    } else {
         header.style.backgroundColor = 'transparent';
     }
 });
 var navMobile = document.querySelector('.nav__Mobile');
+var listMobile = document.querySelector('.nav__list');
 
-navMobile.onclick = function (){
-    var listMobile = document.querySelector('.nav__list');
-    
+navMobile.onclick = function () {
     navMobile.classList.toggle("imgfechar");
     listMobile.classList.toggle("nav__ativo");
 }
+
+var navMobileLink = document.querySelectorAll('.nav__list li a');
+
+function hideBar(){
+    listMobile.setAttribute('class', 'nav__list');
+    navMobile.classList.toggle("imgfechar");
+}
+
+navMobileLink[0].onclick =  hideBar;
+navMobileLink[1].onclick =  hideBar;
+navMobileLink[2].onclick =  hideBar;
+navMobileLink[3].onclick =  hideBar;
 
 // Contact
 var styleContact = document.querySelectorAll('#contact__link');
 var styleContactSpan = document.querySelectorAll('.contact__list li span');
 
 styleContact[0].onmouseover = function () {
-    effectContactON('#4C4C4C','0'); 
+    effectContactON('#4C4C4C', '0');
 };
 styleContact[0].onmouseout = function () {
-    effectContactOFF('0'); 
+    effectContactOFF('0');
 };
 styleContact[1].onmouseover = function () {
-    effectContactON('#D5285E','1'); 
+    effectContactON('#D5285E', '1');
 };
 styleContact[1].onmouseout = function () {
-    effectContactOFF('1'); 
+    effectContactOFF('1');
 };
 styleContact[2].onmouseover = function () {
-    effectContactON('#0079B9','2'); 
+    effectContactON('#0079B9', '2');
 };
 styleContact[2].onmouseout = function () {
-    effectContactOFF('2'); 
+    effectContactOFF('2');
 };
 styleContact[3].onmouseover = function () {
-    effectContactON('#FD5956','3'); 
+    effectContactON('#FD5956', '3');
 };
 styleContact[3].onmouseout = function () {
-    effectContactOFF('3'); 
+    effectContactOFF('3');
 };
 
-function effectContactON(color,spanNumber) {
-        styleContactSpan[spanNumber].classList.toggle("contact__span--JS");
-        styleContactSpan[spanNumber].style.transition = '0.5s ease';
-        styleContactSpan[spanNumber].style.backgroundColor = color; 
+function effectContactON(color, spanNumber) {
+    styleContactSpan[spanNumber].classList.toggle("contact__span--JS");
+    styleContactSpan[spanNumber].style.transition = '0.5s ease';
+    styleContactSpan[spanNumber].style.backgroundColor = color;
 }
 function effectContactOFF(spanNumber) {
     styleContactSpan[spanNumber].setAttribute('class', ' ');
-    styleContactSpan[spanNumber].style.backgroundColor = '#ffffff'; 
+    styleContactSpan[spanNumber].style.backgroundColor = '#ffffff';
 }
 
 // Footer
