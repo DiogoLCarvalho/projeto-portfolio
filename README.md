@@ -1,5 +1,5 @@
 # Novo Portfólio :computer:
-![video_Trim](https://user-images.githubusercontent.com/84794798/126792510-4ba5e7b9-4674-41e8-8288-18bd699b62c4.gif)
+![Captura de tela 2021-07-23 122830](https://user-images.githubusercontent.com/84794798/126805115-0d1d68e8-234d-40cb-843b-ee2e6ebb4229.jpg)
   Novo projeto de portfólio. Desenvolvido 100% por conta própria. Responsivo e projetado para Mobile.
 ## Teste por este link: :exclamation: :exclamation:
   https://diogolcarvalho.github.io/projeto-guess-the-number/
