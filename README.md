@@ -2,7 +2,7 @@
 ![Captura de tela 2021-07-23 122830](https://user-images.githubusercontent.com/84794798/126805115-0d1d68e8-234d-40cb-843b-ee2e6ebb4229.jpg)
   Novo projeto de portfólio. Desenvolvido 100% por conta própria. Responsivo e projetado para Mobile.
 ## Teste por este link: :exclamation: :exclamation:
-  https://diogolcarvalho.github.io/projeto-guess-the-number/
+  https://diogolcarvalho.github.io/projeto-portfolio/
 ## Passo a Passo :keyboard:
   ### Organização das pastas :file_folder:
   ![folders](https://user-images.githubusercontent.com/84794798/126793442-1cd8091c-cbda-4035-8593-6387382f18af.jpg)<br/> 
