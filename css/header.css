@@ -146,8 +146,7 @@ header {
     }
 }
 
-@keyframes animation__title {
-    /*Mudando escala e rotação*/
+@keyframes animation__title { /*Mudando escala e rotação*/
     0% {
         transform: scale(0.9);
     }
