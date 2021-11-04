@@ -1,0 +1,89 @@
+@import 'header.css';
+@import 'reset.css';
+@import 'projects.css';
+@import 'variables.css';
+body {
+    font-family: 'Vollkorn', sans-serif;
+}
+
+#header__div {
+    background-color: var(--colorFive);
+    display: block;
+    max-width: 50%;
+    height: max-content;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+    box-shadow: 0px 2px 6px rgba(255, 255, 255, 1);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#title__error {
+    font-size: 10vmax;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+#title__error::after {
+    position: absolute;
+    content: '404';
+    /* deixa no mesmo lugar q o normal */
+    top: 0;
+    left: 0;
+    right: 0;
+    /* Mesmo efeito para o background */
+    background: linear-gradient(-45deg, #2979DA, #37CAD1, #2979DA, #1732BF) no-repeat;
+    background-color: var(--colorTwo, #2B8BD8);
+    animation: gradient 10s ease infinite;
+    background-size: 300% 300%;
+    /* preenchimento dos caracteres do texto. */
+    -webkit-text-fill-color: transparent;
+    /* especifica se o fundo de um elemento */
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, .30);
+}
+
+#sub__title {
+    text-align: center;
+    font-size: 2.2vmax;
+    font-weight: 600;
+    color: #484f53;
+}
+
+#header__div>h2+p {
+    font-size: 1.3vmax;
+    text-align: center;
+    padding: 0px 5vw;
+    line-height: 2.5vw;
+}
+
+#backToHome {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__btn {
+    position: absolute;
+}
+
+@media (max-width: 700px) {
+    #header__div {
+        max-width: 90%;
+    }
+    #title__error {
+        font-size: 15vmax;
+    }
+    #header__div>h2+p {
+        font-size: 1.9vmax;
+        line-height: 5vw;
+    }
+    .card__btn {
+        padding: 7px;
+    }
+        
+}
