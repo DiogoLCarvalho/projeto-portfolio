@@ -167,6 +167,9 @@
     #projects__skills li {
         flex: 1 0 3.75em;
     }
+    #projects__skills li + li{
+        margin-left: 30px;
+    }
     #projects__skills {
         padding: 0 30px;
     }
@@ -176,6 +179,9 @@
     .projects__card {
         width: 18.75em;
         height: 27.81em;
+    }
+    .projects__card:nth-of-type(3),.projects__card:nth-of-type(4) {
+        height: 28.81em;
     }
     #projects__skills ul li {
         min-width: 2.81em;
@@ -187,6 +193,9 @@
     .projects__card {
         width: 15em;
         height: 29.69em;
+    }
+    .projects__card:nth-of-type(3),.projects__card:nth-of-type(4) {
+        height: 30em;
     }
 }
 
