@@ -35,26 +35,30 @@
 #projetcts__container {
     display: grid;
     grid-area: projects;
-    grid-template-areas: "title title" "project01 project02" "project03 project04";
+    grid-template-areas: "title title" "project01 project02" "project03 project04" "pagination pagination";
     gap: 20px;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-.projetcts__container>.projects__card:first-child {
+#projetcts__container>.projects__card:first-child {
     grid-area: project01;
 }
 
-.projetcts__container>.projects__card:nth-child(2) {
+#projetcts__container>.projects__card:nth-child(2) {
     grid-area: project02;
 }
 
-.projetcts__container>.projects__card:nth-child(3) {
+#projetcts__container>.projects__card:nth-child(3) {
     grid-area: project03;
 }
 
-.projetcts__container>.projects__card:last-child {
+#projetcts__container>.projects__card:last-child {
     grid-area: project04;
+}
+
+#projetcts__container>#projects__pagination{
+    grid-area: pagination;
 }
 
 .projects__title {
@@ -132,6 +136,30 @@
 
 .card__img img {
     width: 100%;
+}
+
+#projects__pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#projects__pagination div{
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 20px;
+    color: var(--colorFive, white);
+
+}
+#projects__pagination div:not(.pagination__numbers),#projects__pagination div.pagination__numbers div{
+    width: 40px;
+    height: 40px;
+}
+#projects__pagination div.pagination__numbers div:hover,#projects__pagination div.pagination__numbers div.active{
+    color: var(--colorOne, #1732BF);
 }
 
 @media (max-width: 1300px) {
