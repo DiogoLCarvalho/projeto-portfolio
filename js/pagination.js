@@ -6,7 +6,7 @@ import cardProject from "./skillsContent.js";
 
 
 const data = Array.from({ length: 8 }).map((_, i) => {
-    const arrayDados = [cardProject.cardContent[i].nome, cardProject.cardContent[i].img, cardProject.cardContent[i].text]
+    const arrayDados = [cardProject.cardContent[i].nome, cardProject.cardContent[i].img, cardProject.cardContent[i].text, cardProject.cardContent[i].link]
     return arrayDados
 });
 
@@ -102,40 +102,24 @@ const list = {
                     </div>
 
                     <div class="card__img">
-                        <a href="https://diogolcarvalho.github.io/projeto-To-Do-List/" target="_blank"><img src="${item[1]}" alt="projeto__Imagem"></a>
+                        <a href="${item[3]}" target="_blank"><img src="${item[1]}" alt="projeto__Imagem"></a>
                     </div>
                     
                     <div class="card__text">
                         <p>${item[2]}</p>
 
-                        <a class="card__btn" href="https://diogolcarvalho.github.io/projeto-To-Do-List/"
+                        <a class="card__btn" href="${item[3]}"
                             target="_blank">Veja o projeto</a>
                     </div>
                 </div>
         `
 
-        html.get('#projetcts__container').appendChild(div);
+        html.get('#projects__cardSkills').appendChild(div);
         
-
     },
     update() {
         // Sempre q mudar de página, zere a lista atual. Se não ele coloca mais de 5 elementos.
-        html.get('#projetcts__container').innerHTML = `
-        <h1 class="projects__title"> Projetos</h1>
-
-
-        <div id="projects__pagination">
-            <div class="first">&#171;</div>
-            <div class="prev">&lt;</div>
-    
-            <div class="pagination__numbers">
-                <div>1</div>
-            </div>
-    
-            <div class="next">&gt;</div>
-            <div class="last">&#187;</div>
-        </div>
-        `;
+        html.get('#projects__cardSkills').innerHTML = '';
 
 
         // já q vc vai trabalhar com o array e o estadoDaAplicação. Vc tem q tirar um do page, pq ele começa com 1 e o array começa o 0
