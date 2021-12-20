@@ -40,3 +40,7 @@ const skillCard = [
         text: 'Projeto Lista de Tarefas ou To Do List. Desenvolvido com JavaScript, HTML e CSS. O projeto utiliza Local Storage que armazena os dados no navegador do usuário, para predefinir o tema do projeto. O projeto pode ajudar na organização, em lembretes e tarefas.'
     }
 ]
+
+export default { 
+    cardContent: skillCard,
+};
