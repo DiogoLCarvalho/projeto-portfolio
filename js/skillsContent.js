@@ -12,10 +12,10 @@ const skillCard = [
         link:'https://diogolcarvalho.github.io/primeiro-portifolio-responsivo/'
     },
     {
-        nome: 'Fã Page',
-        img: 'img/projects03.jpg',
-        text: 'Projeto inspirado na tarefa do site <a href="https://www.freecodecamp.org/diogo_lima_carvalho" target="_blank">@freecodecamp</a> que estou cursando. É basicamente uma página de divulgação da cantora, com algumas informações, suas redes e álbuns. Um one page site utilizando HTML, CSS e Javascript para o desenvolvimento projeto. ',
-        link:'https://codepen.io/diogolcarvalho/pen/GRmxpmx'
+        nome: 'Jogo da Memória',
+        img: 'img/projects08.png',
+        text: 'Projeto do jogo da memória(Memory Game). Usando HTML, CSS e Javascript Vanilla. O projeto utiliza arrays, objetos, funções, etc. Como no jogo clássico, basta clicar em dois cards e haverá uma verificação, indicando acerto ou erro.',
+        link:'https://diogolcarvalho.github.io/projeto-jogo-da-memoria/'
     },
     {
         nome: 'Lista de Tarefa',
@@ -24,26 +24,26 @@ const skillCard = [
         link:'https://diogolcarvalho.github.io/projeto-To-Do-List/'
     },
     {
-        nome: 'Jogo da Memória',
-        img: 'img/projects05.jpg',
-        text: 'Projeto do jogo da memória(Memory Game). Usando HTML, CSS e Javascript Vanilla. O projeto utiliza arrays, objetos, funções, etc. Como no jogo clássico, basta clicar em dois cards e haverá uma verificação, indicando acerto ou erro.',
-        link:'https://diogolcarvalho.github.io/projeto-jogo-da-memoria/'
+        nome: 'Fã Page',
+        img: 'img/projects03.jpg',
+        text: 'Projeto inspirado na tarefa do site <a href="https://www.freecodecamp.org/diogo_lima_carvalho" target="_blank">@freecodecamp</a> que estou cursando. É basicamente uma página de divulgação da cantora, com algumas informações, suas redes e álbuns. Um one page site utilizando HTML, CSS e Javascript para o desenvolvimento projeto. ',
+        link:'https://codepen.io/diogolcarvalho/pen/GRmxpmx'
     },
     {
         nome: 'E-commerce',
-        img: 'img/projects06.jpg',
+        img: 'img/projects07.png',
         text: 'Projeto e-commerce. Aqui o foco é criar um site de uma loja de produtos de roupas e sapatos; É possível clicar em um dos produtos e ter mais detalhes, além de uma página de erro se o produto ou link não for encontrado.',
         link:'https://diogolcarvalho.github.io/projeto-eCommerce/'
     },
     {
         nome: 'Converter Texto',
-        img: 'img/projects07.jpg',
+        img: 'img/projects06.png',
         text: 'Projeto Javascript Vanilla, HTML, CSS, para converter textos. Ao escrever um texto na área selecionada, o usuário pode clicar em um dos botões para transformar em maiúscula, minúscula, texto capitalizado, copiar ou limpar texto.',
         link:'https://diogolcarvalho.github.io/projeto-Converter-Texto/'
     },
     {
         nome: 'Validação de Formulários',
-        img: 'img/projects08.jpg',
+        img: 'img/projects05.jpg',
         text: 'Projeto para validar os dados que o usuário digitou no formulário, indicando erro ou acerto de acordo com o digitado. Além de ter campos obrigatórios, que se não forem digitados não serão aceitos corretamente.',
         link:'https://diogolcarvalho.github.io/projeto-validacao-de-formulario/'
     }
