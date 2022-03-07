@@ -6,7 +6,7 @@ import cardProject from "./skillsContent.js";
 
 
 const data = Array.from({ length: 8 }).map((_, i) => {
-    const arrayDados = [cardProject.cardContent[i].nome, cardProject.cardContent[i].img, cardProject.cardContent[i].text, cardProject.cardContent[i].link]
+    const arrayDados = [cardProject.cardContent[i].nome, cardProject.cardContent[i].img, cardProject.cardContent[i].text, cardProject.cardContent[i].link,cardProject.cardContent[i].alt]
     return arrayDados
 });
 
@@ -102,7 +102,7 @@ const list = {
                     </div>
 
                     <div class="card__img">
-                        <a href="${item[3]}" target="_blank"><img src="${item[1]}" alt="projeto__Imagem"></a>
+                        <a href="${item[3]}" target="_blank"><img src="${item[1]}" alt="${item[4]}"></a>
                     </div>
                     
                     <div class="card__text">
