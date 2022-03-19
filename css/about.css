@@ -1,3 +1,6 @@
+@import url(contact.css);
+
+
 #about {
     height: 90vh;
     background-color: var(--colorFive, white);

@@ -1,3 +1,5 @@
+@import url(about.css);
+
 #projects {
     background-color: var(--colorTwo, #2B8BD8);
     display: grid;
