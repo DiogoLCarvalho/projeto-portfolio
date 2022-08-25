@@ -1,4 +1,3 @@
-
 #footer {
     background-color: var(--colorOne, #1732BF);
     height: 30vh;
@@ -56,27 +55,35 @@
 
 hr {
     width: 85%;
+    border-color: white;
 }
 
 @media (max-width: 900px) {
     #footer {
         height: 100%;
     }
+
     .footer__content {
         display: flex;
         flex-direction: column;
         margin: 20px;
     }
-    .footer__text, .footer__localization, .footer__link {
+
+    .footer__text,
+    .footer__localization,
+    .footer__link {
         margin: 20px 0px 20px 0px;
     }
+
     .footer__link p {
         width: 17.50em;
     }
-    hr{
+
+    hr {
         display: none;
     }
 }
+
 @media (max-width: 300px) {
     .footer__link p {
         width: 12.50em;

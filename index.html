@@ -40,11 +40,12 @@
     </header>
 
     <section id="about">
-        <div class="about__img" aria-label="foto de rosto pessoal"></div>
+        <div class="about__img rellax" aria-label="foto de rosto pessoal" data-rellax-speed="2" data-rellax-percentage=".5"></div>
 
-        <div class="about__text">
-            <h2 class="section__title">Sobre</h2>
-            <p>Em 2020 foi a primeira vez que tive contato com HTML, CSS e JavaScript. Ao começar a estudar as
+        <div class="about__text"> 
+            <!-- Da para colocar responsividade nas datas -->
+            <h2 class="section__title rellax" data-rellax-speed="3" data-rellax-percentage=".3">Sobre</h2>
+            <p class="rellax" data-rellax-speed="3" data-rellax-percentage=".1">Em 2020 foi a primeira vez que tive contato com HTML, CSS e JavaScript. Ao começar a estudar as
                 linguagens, fiquei instantaneamente fascinado com tudo o que elas podiam oferecer. Daí em diante,
                 tive absoluta certeza que queria trabalhar com isso. </p>
         </div>
@@ -150,8 +151,13 @@
     </section>
 
     <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="js/main.js"></script>
     <script type="module" src="js/pagination.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+
+    </script>
 </body>
 
 </html>
