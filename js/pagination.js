@@ -5,8 +5,8 @@
 import cardProject from "./skillsContent.js";
 
 
-const data = Array.from({ length: 8 }).map((_, i) => {
-    const arrayDados = [cardProject.cardContent[i].nome, cardProject.cardContent[i].img, cardProject.cardContent[i].text, cardProject.cardContent[i].link,cardProject.cardContent[i].alt]
+const data = Array.from({ length: 11 }).map((_, i) => {
+    const arrayDados = [cardProject.cardContent[i].nome, cardProject.cardContent[i].img, cardProject.cardContent[i].text, cardProject.cardContent[i].link, cardProject.cardContent[i].alt]
     return arrayDados
 });
 
@@ -85,9 +85,11 @@ const list = {
         // console.log(item);
         // Esta função é executada a cada cinco vezes. PQ o itensPaginados tem cinco elementos. 
         // Paga cada elemento criado, vc cria uma div, coloca uma classe nela, e jogo dentro dele o item q vem do data la em cima, e depois colocar no html
-
+        console.log(item)
+        console.log(item[5])
         const div = document.createElement('div');
         div.classList.add('projects__card');
+
 
 
         div.innerHTML = `
@@ -115,7 +117,7 @@ const list = {
         `
 
         html.get('#projects__cardSkills').appendChild(div);
-        
+
     },
     update() {
         // Sempre q mudar de página, zere a lista atual. Se não ele coloca mais de 5 elementos.

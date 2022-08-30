@@ -4,7 +4,7 @@ const skillCard = [
         img: 'img/projects01.jpg',
         text: 'Projeto JavaScript, HTML e CSS do jogo "Guess the game". No projeto haverá um número aleatório de 1 a 100 que você terá que adivinhar. A cada tentativa aparecerá uma mensagem indicando se o seu palpite foi muito alto ou baixo.',
         link:'https://diogolcarvalho.github.io/projeto-guess-the-number/',
-        alt:'Primeira imagem conceitual representando o projeto Adivinhe o número'
+        alt:'Primeira imagem conceitual representando o projeto Adivinhe o número',
     },
     {
         nome: 'Primeiro Portfólio',
@@ -54,7 +54,29 @@ const skillCard = [
         text: 'Projeto para validar os dados que o usuário digitou no formulário, indicando erro ou acerto de acordo com o digitado. Além de ter campos obrigatórios, que se não forem digitados não serão aceitos corretamente.',
         link:'https://diogolcarvalho.github.io/projeto-validacao-de-formulario/',
         alt:'Oitava imagem conceitual representando o projeto Validação de Formulários'
+    },
+    {
+        nome: 'Timer em Javascript',
+        img: 'img/projects09.png',
+        text: 'A ideia geral é mexer com um timer. A página inicial vai ter uma barra lateral que vai ter todas as opções que o projeto oferece: um timer personalizado, quanto tempo falta para acabar o ano, semana, dia, mês, etc.',
+        link:'https://diogolcarvalho.github.io/projeto-timer/',
+        alt:'Nona imagem conceitual representando o projeto Timer em Javascript'
+    },
+    {
+        nome: 'Jogo da Marvel',
+        img: 'img/projects10.png',
+        text: 'Como um grande fã da Marvel e um apaixonado por tecnologia e jogos, este projeto sem dúvidas é um dos meus favoritos até agora. O projeto tenta emular os jogos antigos de luta, com os personagens da Marvel.',
+        link:'https://marvelgame.netlify.app/',
+        alt:'Décima imagem conceitual representando o projeto Jogo da Marvel'
+    },
+    {
+        nome: 'Fatec Zona Leste Site',
+        img: 'img/projects11.png',
+        text: 'Projeto desenvolvido no curso de desenvolvimento web 1° semestre na Fatec Zona Leste. O objetivo era entender os conceitos das aulas e aplicá-los num modelo de site da Fatec, com opções de acessibilidade, responsividade, etc.',
+        link:'https://diogolcarvalho.github.io/projeto-site-fatec/',
+        alt:'Décima primeira imagem conceitual representando o projeto Fatec Zona Leste Site'
     }
+
 ]
 
 export default { 

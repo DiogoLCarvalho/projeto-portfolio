@@ -20,16 +20,16 @@
 </head>
 
 <body>
-    <header>
+    <header >
         <nav class="header__nav">
             <ul class="nav__list">
-                <li><a href="#"><i class="fas fa-home"></i>Início</a></li>
-                <li><a href="#about"><i class="fas fa-address-card"></i>Sobre</a></li>
-                <li><a href="#projects"><i class="fas fa-project-diagram"></i>Projetos</a></li>
-                <li><a href="#projects__skills"><i class="fab fa-js"></i>Habilidades</a></li>
+                <li><a href="#"  accesskey="1"><i class="fas fa-home"></i>Início</a></li>
+                <li><a href="#about" accesskey="2"><i class="fas fa-address-card"></i>Sobre</a></li>
+                <li><a href="#projects"  accesskey="3"><i class="fas fa-project-diagram"></i>Projetos</a></li>
+                <li><a href="#projects__skills"  accesskey="4"><i class="fab fa-js"></i>Habilidades</a></li>
             </ul>
 
-            <a class="nav__contact" href="#contact">Contato</a>
+            <a class="nav__contact" href="#contact" accesskey="5">Contato</a>
             <div class="nav__Mobile"></div>
         </nav>
 
@@ -40,14 +40,20 @@
     </header>
 
     <section id="about">
-        <div class="about__img rellax" aria-label="foto de rosto pessoal" data-rellax-speed="2" data-rellax-percentage=".5"></div>
+        <div class="about__img rellax" aria-label="foto de rosto pessoal" data-rellax-speed="2"
+            data-rellax-percentage=".5"></div>
 
-        <div class="about__text"> 
+        <div class="about__text">
             <!-- Da para colocar responsividade nas datas -->
             <h2 class="section__title rellax" data-rellax-speed="3" data-rellax-percentage=".3">Sobre</h2>
-            <p class="rellax" data-rellax-speed="3" data-rellax-percentage=".1">Em 2020 foi a primeira vez que tive contato com HTML, CSS e JavaScript. Ao começar a estudar as
-                linguagens, fiquei instantaneamente fascinado com tudo o que elas podiam oferecer. Daí em diante,
-                tive absoluta certeza que queria trabalhar com isso. </p>
+            <p class="rellax" data-rellax-speed="3" data-rellax-percentage=".1">
+                Desde que comecei a programar, nunca parei de me encantar com o mundo da tecnologia.
+                <br></br>
+                Constantemente busco melhorar minhas habilidades e aprender técnicas novas, para que assim eu consiga
+                construir programas e sistemas que realmente possam trazer um impacto positivo na vida das pessoas. Esse
+                é o meu objetivo.
+            </p>
+
         </div>
     </section>
 
@@ -60,6 +66,8 @@
                 <li><i class="fab fa-js-square fa-5x"></i></li>
                 <li><i class="fab fa-html5 fa-5x"></i></li>
                 <li><i class="fab fa-css3-alt fa-5x"></i></li>
+                <li><i class="fab fa-brands fa-bootstrap fa-5x"></i></li>
+                <li><i class="fab fa-brands fa-git-alt fa-5x"></i></li>
             </ul>
         </aside>
 
@@ -67,7 +75,7 @@
             <h1 class="projects__title"> Projetos</h1>
 
             <div id="projects__cardSkills">
-                
+
                 <div class="projects__card">
                     <div class="card__container">
                         <h2>Adivinhe o número</h2>
@@ -82,7 +90,8 @@
                         </div>
                         <div class="card__text">
                             <p>Projeto JavaScript, HTML e CSS do jogo "Guess the game". No projeto haverá um número
-                                aleatório de 1 a 100 que você terá que adivinhar. A cada tentativa aparecerá uma mensagem
+                                aleatório de 1 a 100 que você terá que adivinhar. A cada tentativa aparecerá uma
+                                mensagem
                                 indicando se o seu palpite foi muito alto ou baixo.</p>
                             <a class="card__btn" href="https://diogolcarvalho.github.io/projeto-guess-the-number/"
                                 target="_blank">Veja o projeto</a>
@@ -95,11 +104,11 @@
             <div id="projects__pagination">
                 <div class="first">&#171;</div>
                 <div class="prev">&lt;</div>
-    
+
                 <div class="pagination__numbers">
                     <div>1</div>
                 </div>
-    
+
                 <div class="next">&gt;</div>
                 <div class="last">&#187;</div>
             </div>
@@ -110,15 +119,18 @@
         <h1 class="contact__title">Entre em contato</h1>
         <ul class="contact__list">
             <li>
-                <a href="https://github.com/DiogoLCarvalho" target="_blank"><i id="contact__link" class="fab fa-github-square fa-5x"></i></a><span>Github</span>
+                <a href="https://github.com/DiogoLCarvalho" target="_blank"><i id="contact__link"
+                        class="fab fa-github-square fa-5x"></i></a><span>Github</span>
             </li>
 
             <li>
-                <a href="https://www.instagram.com/diogolcarvalho_/" target="_blank"><i id="contact__link" class="fab fa-instagram-square fa-5x"></i></a><span>Instagram</span>
+                <a href="https://www.instagram.com/diogolcarvalho_/" target="_blank"><i id="contact__link"
+                        class="fab fa-instagram-square fa-5x"></i></a><span>Instagram</span>
             </li>
 
             <li>
-                <a href="https://www.linkedin.com/in/diogo-lima-carvalho/" target="_blank"><i id="contact__link" class="fab fa-linkedin fa-5x"></i></a><span>Linkedin</span>
+                <a href="https://www.linkedin.com/in/diogo-lima-carvalho/" target="_blank"><i id="contact__link"
+                        class="fab fa-linkedin fa-5x"></i></a><span>Linkedin</span>
             </li>
 
             <li>
@@ -143,12 +155,25 @@
             </ul>
 
             <div class="footer__link">
-                <p>Se quiser ver como este site foi desenvolvido passo a passo, por favor, cheque o meu Github abaixo: </p>
+                <p>Se quiser ver como este site foi desenvolvido passo a passo, por favor, cheque o meu Github abaixo:
+                </p>
                 <a href="https://github.com/DiogoLCarvalho/projeto-portfolio" target="_blank">Aqui!</a>
             </div>
         </div>
         <hr>
     </section>
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
     <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
