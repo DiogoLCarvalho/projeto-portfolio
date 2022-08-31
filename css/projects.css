@@ -30,8 +30,12 @@
     box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
     text-align: center;
 }
+#projects__skills ul li:hover{
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
 
-#projects__skills li:first-child{
+#projects__skills li:first-child {
     color: #F2C438;
 }
 
@@ -39,8 +43,15 @@
     color: #F25835;
 }
 
-#projects__skills li:last-child {
+#projects__skills li:nth-child(3) {
     color: #2BB9D9;
+}
+
+#projects__skills li:nth-child(4) {
+    color: #6f42c1;
+}
+#projects__skills li:nth-child(5) {
+    color: #F24535;
 }
 
 
@@ -51,11 +62,11 @@
     margin-bottom: 20px;
 }
 
-#projects__cardSkills{
+#projects__cardSkills {
     display: grid;
-    grid-template-areas: "project01 project02" "project03 project04";
+    grid-template-areas: "project01 project02""project03 project04";
     gap: 20px;
-    justify-content: center; 
+    justify-content: center;
 }
 
 #projects__cardSkills>.projects__card:first-child {
@@ -70,7 +81,7 @@
     grid-area: project03;
 }
 
-#projects__cardSkills>.projects__card:last-child {
+#projects__cardSkills>.projects__card:nth-child(4) {
     grid-area: project04;
 }
 
@@ -107,8 +118,18 @@
     color: #F25835;
 }
 
-.card__icons i:last-child {
+.card__icons i:nth-child(3) {
     color: #2BB9D9;
+}
+
+.card__icons i.bootstrap {
+    color: #6f42c1;
+}
+.card__icons i.jquery {
+    color: #0769ad;
+}
+.card__icons i.api {
+    color: #504a4a;
 }
 
 .card__img img {
@@ -146,14 +167,14 @@
 
 
 
-#projects__pagination{
+#projects__pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-#projects__pagination div{
+#projects__pagination div {
     cursor: pointer;
 
     display: flex;
@@ -165,11 +186,15 @@
     color: var(--colorFive, white);
 
 }
-#projects__pagination div:not(.pagination__numbers),#projects__pagination div.pagination__numbers div{
+
+#projects__pagination div:not(.pagination__numbers),
+#projects__pagination div.pagination__numbers div {
     width: 40px;
     height: 40px;
 }
-#projects__pagination div.pagination__numbers div:hover,#projects__pagination div.pagination__numbers div.active{
+
+#projects__pagination div.pagination__numbers div:hover,
+#projects__pagination div.pagination__numbers div.active {
     color: var(--colorOne, #1732BF);
 }
 
@@ -180,14 +205,15 @@
 
 @media (max-width: 1300px) {
     #projects__cardSkills {
-        grid-template-areas: "project01" "project02" "project03 " "project04";
+        grid-template-areas: "project01""project02""project03 ""project04";
     }
 }
 
 @media (max-width: 780px) {
     #projects {
-        grid-template-areas: "skills" "projects";
+        grid-template-areas: "skills""projects";
     }
+
     #projects__skills {
         position: relative;
         overflow-x: auto;
@@ -197,6 +223,7 @@
         -ms-overflow-style: -ms-autohiding-scrollbar;
         /*Configuração touch pára celular*/
     }
+
     #projects__skills::after {
         content: '→';
         position: absolute;
@@ -205,35 +232,45 @@
         color: rgba(0, 0, 0, .3);
         animation: seta .5s ease-in 0s infinite alternate;
     }
+
     #projects__skills ul {
         display: flex;
     }
+
     #projects__skills li {
         flex: 1 0 3.75em;
     }
-    #projects__skills li + li{
+
+    #projects__skills li+li {
         margin-left: 30px;
     }
+
     #projects__skills {
         padding: 0 30px;
     }
+
     #projects__skills li a {
         margin: 30px 30px 30px 0;
     }
+
     .projects__card {
         width: 18.75em;
         height: 27.81em;
     }
+
     .projects__card:nth-of-type(3) {
         height: 28.81em;
     }
+
     #projects__skills ul li {
-        min-width: 2.81em;
+        min-width: 5em;
         max-width: 3.75em;
     }
-    .card__icons i{
+
+    .card__icons i {
         font-size: 35px;
     }
+
     .projects__card:nth-of-type(4) {
         height: 29.7em;
     }
@@ -244,10 +281,13 @@
         width: 15em;
         height: 29.69em;
     }
-    .projects__card:nth-of-type(3),.projects__card:nth-of-type(4) {
+
+    .projects__card:nth-of-type(3),
+    .projects__card:nth-of-type(4) {
         height: 30em;
     }
-    .card__icons i{
+
+    .card__icons i {
         font-size: 10vw;
     }
 }
@@ -256,7 +296,71 @@
     from {
         left: 50%;
     }
+
     to {
         left: 60%;
     }
 }
+
+/* https://animista.net/ - animação */
+ @-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  
