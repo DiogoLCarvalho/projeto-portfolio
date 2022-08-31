@@ -6,7 +6,7 @@ import cardProject from "./skillsContent.js";
 
 
 const data = Array.from({ length: 11 }).map((_, i) => {
-    const arrayDados = [cardProject.cardContent[i].nome, cardProject.cardContent[i].img, cardProject.cardContent[i].text, cardProject.cardContent[i].link, cardProject.cardContent[i].alt]
+    const arrayDados = [cardProject.cardContent[i].nome, cardProject.cardContent[i].img, cardProject.cardContent[i].text, cardProject.cardContent[i].link, cardProject.cardContent[i].alt, cardProject.cardContent[i].icons]
     return arrayDados
 });
 
@@ -85,8 +85,7 @@ const list = {
         // console.log(item);
         // Esta função é executada a cada cinco vezes. PQ o itensPaginados tem cinco elementos. 
         // Paga cada elemento criado, vc cria uma div, coloca uma classe nela, e jogo dentro dele o item q vem do data la em cima, e depois colocar no html
-        console.log(item)
-        console.log(item[5])
+
         const div = document.createElement('div');
         div.classList.add('projects__card');
 
@@ -98,9 +97,7 @@ const list = {
                     <h2>${item[0]}</h2>
 
                     <div class="card__icons">
-                        <i class="fab fa-js-square fa-3x"></i>
-                        <i class="fab fa-html5 fa-3x"></i>
-                        <i class="fab fa-css3-alt fa-3x"></i>
+
                     </div>
 
                     <div class="card__img">
@@ -117,6 +114,7 @@ const list = {
         `
 
         html.get('#projects__cardSkills').appendChild(div);
+
 
     },
     update() {
@@ -165,6 +163,7 @@ const buttons = {
         for (let page = maxLeft; page <= maxRight; page++) {
             buttons.create(page);
         }
+        putIcons();
     },
     calculteMaxVisible() {
         const { maxVisibleButtons } = estadoDaAplicaco;
@@ -201,6 +200,54 @@ function update() {
 function iniciar() {
     update();
     controles.createListeners();
+}
+
+
+
+function createElement(start, limit) {
+    let contador = 1;
+
+
+    for (let i = start; i < limit; i++) {
+
+        let cardSelected = document.querySelector(`.projects__card:nth-of-type(${contador}) .card__icons`)
+        // console.log(cardProject.cardContent[i].icons);
+
+        let icons_lenght = cardProject.cardContent[i].icons.length
+
+        for (let x = 0; x < icons_lenght; x++) {
+            let icon = document.createElement("i");
+            icon.className = `${cardProject.cardContent[i].icons[x]}`
+            cardSelected.appendChild(icon)
+        }
+
+        contador++
+    }
+}
+
+// Você precisa colocar saber a quantidade de elementos que vão ter na tela
+function putIcons() {
+    const cards = document.querySelectorAll('.projects__card')
+    const page = document.querySelector('.active').innerHTML
+
+
+    switch (page) {
+        case "1":
+            createElement(0,cards.length);
+
+            break;
+        case "2":
+            createElement(4,8);
+            
+            break;
+        case "3":
+            createElement(8,11);
+            
+            break;
+
+        default:
+            break;
+    }
 }
 
 
